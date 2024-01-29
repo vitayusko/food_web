@@ -158,10 +158,11 @@ margin-right: 30px;}
 
 .benefits {
     background-color: rgba(255, 229, 80, 1);
+    padding-top: 113px;
+    padding-bottom: 124px ;
 }
 
 .benefits-container {
-    padding: 113px 16px 124px 16px;
     display: flex;
     gap: 16px;
 }
@@ -200,6 +201,7 @@ margin-right: 30px;}
         font-weight: 400;
         line-height: 1.50;
         margin-bottom: 40px;
+        max-width: 500px;
 }
 
 .benefits-list {
