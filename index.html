@@ -3,120 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FoodSta</title>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Modern Normalise -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header>
-      <nav>
-        <a href=""
-          ><img src="./images/Vector.svg" alt="logo" width="66" height="52"
-        /></a>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Service</li>
-          <li>Menu</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-      <button type="button">Order Now</button>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="header-logo-link" href=""
+            ><img
+              class="header-logo-img"
+              src="./images/Vector.svg"
+              alt="logo"
+              width="66"
+              height="52"
+          /></a>
+          <ul class="header-list">
+            <li class="header-item">Home</li>
+            <li class="header-item">About</li>
+            <li class="header-item">Service</li>
+            <li class="header-item">Menu</li>
+            <li class="header-item">Contact</li>
+          </ul>
+        </nav>
+        <button class="header-btn" type="button">Order Now</button>
+      </div>
     </header>
 
     <main>
       <!-- hero section -->
-      <section>
-        <h1>Enjoy Your Favorite Food From Anywhere</h1>
-        <p>
-          With just a few clicks, you can have your favorite meals delivered
-          straight to your doorstep, no matter where you are. Order now and
-          enjoy a hassle-free and delicious meal from the comfort of your own
-          home.
-        </p>
-        <button>Order Now</button>
-        <img
-          src="./images/salad hero img.png"
-          alt="salad"
-          width="528"
-          height="528"
-        />
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-container-text">
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-text">
+              With just a few clicks, you can have your favorite meals delivered
+              straight to your doorstep, no matter where you are. Order now and
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
+            </p>
+            <button type="button" class="hero-btn">Order Now</button>
+          </div>
+          <img
+            class="hero-img"
+            src="./images/salad hero img.png"
+            alt="salad"
+            width="528"
+            height="528"
+          />
+        </div>
       </section>
 
       <!-- benefits -->
-      <section>
-        <img src="./images/aple-min.png" alt="aplle" width="396" height="502" />
-        <h2>What’s Special About Our Offerings</h2>
-        <p>
-          With our platform, you can browse through a diverse selection of
-          cuisines and local restaurants, and choose from a variety of dishes
-          that cater to your specific taste buds.
-        </p>
-        <ul>
-          <li>
-            <img src="" alt="" />
-            <h3>Fasest Delivery</h3>
-            <p>
-              Our advanced logistics system and dedicated delivery partners
-              ensure that your meals are delivered to you within 30-minutes.
+      <section class="benefits">
+        <div class="container benefits-container">
+          <h2 class="visually-hidden">Benefits</h2>
+          <div class="img-container">
+            <img
+              class="benefits-img"
+              src="./images/aple-min.png"
+              alt="aplle"
+              width="396"
+              height="502"
+            />
+          </div>
+          <div class="benefits-container-text">
+            <h2 class="benefits-title">What’s Special About Our Offerings</h2>
+            <p class="benefits-text">
+              With our platform, you can browse through a diverse selection of
+              cuisines and local restaurants, and choose from a variety of
+              dishes that cater to your specific taste buds.
             </p>
-          </li>
-          <li>
-            <img src="" alt="" />
-            <h3>Easy To Order</h3>
-            <p>
-              You can browse through a wide variety of cuisines and restaurants,
-              select your favorite meals, and place your order in just a few
-              clicks.
-            </p>
-          </li>
-        </ul>
-        <button type="button">Order Now</button>
+            <ul class="benefits-list">
+              <li class="benefits-item">
+                <img src="" alt="" />
+                <h3 class="benefits-subtitle">Fasest Delivery</h3>
+                <p class="benefits-item-text">
+                  Our advanced logistics system and dedicated delivery partners
+                  ensure that your meals are delivered to you within 30-minutes.
+                </p>
+              </li>
+              <li class="benefits-item">
+                <img src="" alt="" />
+                <h3 class="benefits-subtitle">Easy To Order</h3>
+                <p class="benefits-item-text">
+                  You can browse through a wide variety of cuisines and
+                  restaurants, select your favorite meals, and place your order
+                  in just a few clicks.
+                </p>
+              </li>
+            </ul>
+            <button class="benefits-btn" type="button">Order Now</button>
+          </div>
+        </div>
       </section>
 
       <!-- favorites -->
 
       <section>
-        <h2>Some of Our Favorites</h2>
-        <p>Looking for something delicious?</p>
-        <ul>
-          <li>
-            <img
-              src="./images/borshch.png"
-              alt="food"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/chicken.png"
-              alt="food"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/gamburger.png"
-              alt="food"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img src="./images/Pasta.png" alt="food" width="315" height="315" />
-          </li>
-          <li>
-            <img src="./images/pizza.png" alt="food" width="315" height="315" />
-          </li>
-          <li>
-            <img src="./images/salat.png" alt="food" width="315" height="315" />
-          </li>
-        </ul>
+        <div class="container">
+          <h2>Some of Our Favorites</h2>
+          <p>Looking for something delicious?</p>
+          <ul>
+            <li>
+              <img
+                src="./images/borshch.png"
+                alt="food"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/chicken.png"
+                alt="food"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/gamburger.png"
+                alt="food"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/Pasta.png"
+                alt="food"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/pizza.png"
+                alt="food"
+                width="315"
+                height="315"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/salat.png"
+                alt="food"
+                width="315"
+                height="315"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!--reviews-->
 
       <section>
+        <div class="container"></div>
         <h2>What our Customers Say</h2>
         <p>
           Don't just take our word for it - see what our satisfied customers
@@ -151,17 +217,19 @@
       <!-- subscribe -->
 
       <section>
-        <h2>Subscribe To Get Special Offers</h2>
-        <p>
-          Order now and receive 10% off your first meal with Enjoy Your Favorite
-          Food From Anywhere.
-        </p>
-        <img
-          src="./images/banan-min.png"
-          alt="banan"
-          width="608"
-          height="266"
-        />
+        <div class="container">
+          <h2>Subscribe To Get Special Offers</h2>
+          <p>
+            Order now and receive 10% off your first meal with Enjoy Your
+            Favorite Food From Anywhere.
+          </p>
+          <img
+            src="./images/banan-min.png"
+            alt="banan"
+            width="608"
+            height="266"
+          />
+        </div>
       </section>
     </main>
 

@@ -1,0 +1,239 @@
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    background-color: #FEFEFE;
+    font-family: 'Inter', sans-serif;
+        font-family: 'Kalam', cursive;
+        font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* header */
+
+.header {}
+
+.header-container {
+    display: flex;
+    padding: 20px 16px;
+    align-items: center;
+}
+
+.container {}
+
+.header-nav {
+display: flex;
+flex-grow: 1;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;}
+
+
+.header-logo-link {}
+
+.header-logo-img {}
+
+.header-list {display: flex;
+align-items: center;
+gap: 28px;
+margin-right: 30px;}
+
+.header-item {
+    color: #2C2C2C;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+}
+
+.header-btn {
+    color: #2C2C2C;
+        text-align: right;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.5;
+        padding: 6px 18px;
+        border-radius: 30px;
+            background: #BBF330;
+            border: none;
+            margin-left: auto;
+}
+
+/* hero */
+
+.hero {}
+
+.hero-container {
+    display: flex;
+    margin-bottom: 55px;
+    gap: 16px;
+}
+
+.hero-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 160px 0 160px 0;
+}
+
+.hero-title {
+    color: #2C2C2C;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.20;
+    max-width: 511px;
+    margin-bottom: 28px;
+}
+
+.hero-text {
+    color:  #2C2C2C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.50;
+    max-width: 511px;
+    margin-bottom: 50px;
+}
+
+.hero-btn {
+    color:  #2C2C2C;
+        text-align: right;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1.50;
+        border-radius: 30px;
+        background: #BBF330;
+        padding: 6px 18px;
+        border: none;
+}
+
+.hero-img {
+    padding: 40px 50px 40px auto;
+    margin-left: auto;
+}
+
+/* benefits-container */
+
+.benefits {
+    background-color: rgba(255, 229, 80, 1);
+}
+
+.benefits-container {
+    padding: 113px 16px 124px 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.img-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-img {
+    margin-top: 0 ;
+}
+
+.benefits-container-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%; 
+    align-items: flex-start;
+    padding-top: 83px;
+    padding-bottom: 36px;
+}
+
+.benefits-title {
+    color:  #2C2C2;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.20;
+        margin-bottom: 20px;
+}
+
+.benefits-text {
+    color:  #2C2C2C;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.50;
+        margin-bottom: 40px;
+}
+
+.benefits-list {
+    margin-bottom: 32px;
+    display: flex;
+    gap: 67px;
+   
+}
+
+.benefits-item {
+}
+
+.benefits-subtitle {
+    color: #2C2C2C;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.40;
+        margin-bottom: 16px;
+}
+
+.benefits-item-text {
+    color:  #2C2C2C;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.50;
+}
+
+.benefits-btn {
+    border-radius: 30px;
+    padding: 10px 22px;
+        border: 2px solid  #7EB101;
+        background: #FFF;
+        color: #2C2C2C;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.50;
+}
