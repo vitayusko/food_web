@@ -149,58 +149,70 @@
           <p class="favorites-text">Looking for something delicious?</p>
           <ul class="favorites-list">
             <li class="favorites-item">
-              <img
-                class="favorites-item-img"
-                src="./images/borshch.png"
-                alt="food"
-                width="315"
-                height="315"
-              />
+              <div class="favorites-food-bg">
+                <img
+                  class="favorites-item-img"
+                  src="./images/borshch.png"
+                  alt="food"
+                  width="315"
+                  height="315"
+                />
+              </div>
             </li>
             <li class="favorites-item">
-              <img
-                class="favorites-item-img"
-                src="./images/chicken.png"
-                alt="food"
-                width="315"
-                height="315"
-              />
+              <div class="favorites-food-bg">
+                <img
+                  class="favorites-item-img"
+                  src="./images/chicken.png"
+                  alt="food"
+                  width="315"
+                  height="315"
+                />
+              </div>
             </li>
             <li class="favorites-item">
-              <img
-                class="favorites-item-img"
-                src="./images/gamburger.png"
-                alt="food"
-                width="315"
-                height="315"
-              />
+              <div class="favorites-food-bg">
+                <img
+                  class="favorites-item-img"
+                  src="./images/gamburger.png"
+                  alt="food"
+                  width="315"
+                  height="315"
+                />
+              </div>
             </li>
             <li class="favorites-item">
-              <img
-                class="favorites-item-img"
-                src="./images/Pasta.png"
-                alt="food"
-                width="315"
-                height="315"
-              />
+              <div class="favorites-food-bg">
+                <img
+                  class="favorites-item-img"
+                  src="./images/Pasta.png"
+                  alt="food"
+                  width="315"
+                  height="315"
+                />
+              </div>
             </li>
             <li class="favorites-item">
-              <img
-                class="favorites-item-img"
-                src="./images/pizza.png"
-                alt="food"
-                width="315"
-                height="315"
-              />
+              <div class="favorites-food-bg">
+                <img
+                  class="favorites-item-img"
+                  src="./images/pizza.png"
+                  alt="food"
+                  width="315"
+                  height="315"
+                />
+              </div>
             </li>
             <li class="favorites-item">
-              <img
-                class="favorites-item-img"
-                src="./images/salat.png"
-                alt="food"
-                width="315"
-                height="315"
-              />
+              <div class="favorites-food-bg">
+                <img
+                  class="favorites-item-img"
+                  src="./images/salat.png"
+                  alt="food"
+                  width="315"
+                  height="315"
+                />
+              </div>
             </li>
           </ul>
         </div>
@@ -217,7 +229,9 @@
           </p>
           <ul class="reviews-list">
             <li class="reviews-item">
-              <img class="reviews-points" src="" alt="" />
+              <svg class="stars-icon" width="101" height="16">
+                <use href="./images/icons.svg#icon-Stars-1"></use>
+              </svg>
               <p class="reviews-item-text">
                 “The Best app I have used to order food in a while, so many
                 options to choose from too, I would recommend to a freind, No
@@ -236,7 +250,9 @@
               </div>
             </li>
             <li class="reviews-item">
-              <img src="" alt="" />
+              <svg class="stars-icon" width="101" height="16">
+                <use href="./images/icons.svg#icon-Stars-1"></use>
+              </svg>
               <p class="reviews-item-text">
                 “The ease with which I can just go in and order what i want was
                 amazing, It has been a very pleasant experience ordering from
@@ -286,7 +302,7 @@
     <footer class="footer" id="contact">
       <div class="container">
         <div class="footer-nav-bar">
-          <a href=""
+          <a class="footer-logo" href=""
             ><img src="./images/Vector.svg" alt="logo" width="66" height="52"
           /></a>
           <nav class="footer-nav">
@@ -309,6 +325,25 @@
             </ul>
           </nav>
         </div>
+        <div class="footer-subscription">
+          <p class="subscription-title">Subscribe</p>
+          <form class="footer-subscription-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="footer-subscription-input"
+              placeholder="Enter your email"
+            />
+            <button type="submit" class="footer-subscription-btn">
+              Subscribe
+            </button>
+          </form>
+          <p class="footer-subscription-text">
+            By subscribing you agree to with our
+            <a href="#" class="footer-subscription-link">Privacy Policy</a>
+          </p>
+        </div>
         <div class="footer-rights">
           <ul class="footer-rights-list">
             <li class="footer-rights-item">
@@ -325,5 +360,51 @@
         </div>
       </div>
     </footer>
+
+    <!-- modal -->
+    <!-- <div class="overlay-modal">
+      <div class="modal">
+        <button type="button" class="close-modal-btn">
+          <svg class="close-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Order Form</p>
+        <form class="modal-form">
+          <div class="input-field">
+            <label for="user-name" class="input-label">Name</label>
+            <input
+              class="modal-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="input-field">
+            <label for="user-tel" class="input-label">Phone number</label>
+            <input
+              class="modal-input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              required
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            />
+          </div>
+          <div class="input-field">
+            <label for="user-email" class="input-label">Email</label>
+            <input
+              class="modal-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <button type="button" class="submit-modal-btn">Send</button>
+        </form>
+      </div>
+    </div> -->
   </body>
 </html>
