@@ -466,6 +466,25 @@ padding-bottom: 201px;}
         max-width: 532px;
 }
 
+.subscripe-subscription-input {
+        border-radius: 30px;
+        border: 0.854px solid #FFE550;
+        background-color: #FEFEFE;
+        padding: 12px;
+        width: 395px;
+        height: 42px;
+        margin-right: 12px;
+
+    }
+
+    .subscripe-subscription-input:placeholder {
+        color: #505050;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.50;
+    }
+
+
 .subscribe-btn {
     color: #2C2C2C;
         font-size: 13px;
@@ -501,8 +520,10 @@ background:  #FEFEFE;
     margin-right: 143px;
 }
 
-.footer-nav {
-}
+.footer-nav-wraper {
+    display: flex;
+align-items: flex-start;
+justify-content: space-between;}
 
 .footer-nav-list {
     display: flex;
@@ -542,6 +563,7 @@ color:  #2C2C2C;
         border: 0.854px solid  #FFE550;
         background-color:  #FEFEFE;
         padding: 12px;
+        width: 279px;
         height: 42px;
         margin-right: 12px;
 
