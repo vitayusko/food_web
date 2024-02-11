@@ -466,6 +466,7 @@ padding-bottom: 201px;}
         max-width: 532px;
 }
 
+
 .subscripe-subscription-input {
         border-radius: 30px;
         border: 0.854px solid #FFE550;
@@ -555,6 +556,7 @@ color:  #2C2C2C;
 .footer-subscription-form {
     display: flex;        
     margin-bottom: 12px;
+    flex-direction: row;
 
 }
 
